@@ -58,7 +58,7 @@ mybutton.onclick=function(){
     console.log("you are not major");
  }*/
 
-    let age=18;
+    /*let age=18;
     let hasvoterid=true;
 
     if(age>=18){
@@ -72,5 +72,47 @@ mybutton.onclick=function(){
     }
         else{
             console.log("you must have 18+ to drive");
+        }*/
+
+
+
+       /* let isstudent=true;
+         if(isstudent){
+            document.write("you are a student");
+          }
+          else{
+                document.write("you are not a student");
+             }*/
+                
+                
+    const mycheckbox=document.getElementById("mycheckbox");
+    const visabtn=document.getElementById("visabtn");
+    const Mastercardbtn=document.getElementById("Mastercardbtn");
+    const paypibtn=document.getElementById("paypibtn");
+    const mysubmit=document.getElementById("mysubmit");
+    const subresult=document.getElementById("subresult");
+    const paymentresult=document.getElementById("paymentresult");
+
+    mysubmit.onclick=function(){
+        if(mycheckbox.checked){
+            subresult.textContent="you are subscribed";
         }
-    
+        else{
+            subresult.textContent="you are not subscribed";
+
+        }
+        if(visabtn.checked){
+            paymentresult.textContent="you are paying with visa";
+        }
+       else if(Mastercardbtn.checked){
+        paymentresult.textContent="you are paying with mastercard";
+
+       }
+       else if(paypalbtn.checked){
+        paymentresult.textContent="you are paying with paypal";
+
+       }
+       else{
+        paymentresult.textContent="you must select a payment type!";
+       }
+    }

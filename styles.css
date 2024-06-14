@@ -37,3 +37,26 @@
 .mylabels{
     font-size: 30px;
 }*/
+input{
+    margin-left: 600px;
+    margin-top: 10px;
+
+}
+button{
+    margin-left: 600px;
+    margin-top: 10px;
+    height: 30px;
+    width: 80px;
+    background-color: aqua;
+    border-radius: 20px;
+    border-color: transparent;
+    transition: all o.5s ease;
+}
+button:hover{
+    background-color: chocolate;
+}
+
+
+
+
+
